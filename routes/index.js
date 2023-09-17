@@ -1,10 +1,11 @@
-const router = require("express").Router(); // Imports the router object
-const apiRoutes = require("./api"); // Imports the api folder
+// Imports the router object
+const router = require("express").Router(); 
+const apiRoutes = require("./api"); 
 
-router.use("/api", apiRoutes); // Adds the prefix of `/api` to routes created in `api` folder
+router.use("/api", apiRoutes); 
 
 router.use((req, res) => {
-  res.send("<h1>Wrong Route!</h1>"); // Sends a message if the user tries to access any other route
+  res.send("<h1>Wrong Route!</h1>"); 
 });
 
-module.exports = router; // Exports the router object
+module.exports = router; 

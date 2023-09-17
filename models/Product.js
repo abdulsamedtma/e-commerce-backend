@@ -1,7 +1,7 @@
-// import important parts of sequelize library
-const { Model, DataTypes } = require('sequelize');
-// import our database connection from config.js
-const sequelize = require('../config/connection');
+// Import important parts of sequelize library
+const { Model, DataTypes } = require("sequelize");
+// Import our database connection from config.js
+const sequelize = require("../config/connection");
 
 // Initialize Product model (table) by extending off Sequelize's Model class
 class Product extends Model {}
@@ -10,45 +10,45 @@ class Product extends Model {}
 Product.init(
   {
     // define columns
-    id:{
-      type: DataTypes.INTEGER, // Integer
-      allowNull: false, // Doesn't allow null values
-      primaryKey: true, // Set as primary key
-      autoIncrement: true, // Uses auto increment
+    id: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true,
     },
-    product_name:{ // Define product_name column
-      type: DataTypes.STRING, // String
-      allowNull: false, // Doesn't allow null values
+    product_name: {
+      type: DataTypes.STRING,
+      allowNull: false,
     },
-    price:{ // Define price column
-      type: DataTypes.DECIMAL, // Decimal
-      allowNull: false, // Doesn't allow null values
-      validate:{ // Validates that the value is a decimal
+    price: {
+      type: DataTypes.DECIMAL(10, 2),
+      allowNull: false,
+      validate: {
         isDecimal: true,
-      }
+      },
     },
-    stock:{ // Define stock column
-      type: DataTypes.INTEGER, // Integer
-      allowNull: false, // Doesn't allow null values
-      defaultValue: 10, // Set a default value of 10
-      validate:{ // Validates that the value is numeric
+    stock: {
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      defaultValue: 10,
+      validate: {
         isNumeric: true,
-      }
+      },
     },
-    category_id:{ // Define category_id column
-      type: DataTypes.INTEGER, // Integer
-      references:{ // References the category model's id
-        model: 'category',
-        key: 'id',
-      }
-    }
+    category_id: {
+      type: DataTypes.INTEGER,
+      references: {
+        model: "category",
+        key: "id",
+      },
+    },
   },
   {
     sequelize,
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'product',
+    modelName: "product",
   }
 );
 

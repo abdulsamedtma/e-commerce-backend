@@ -2,20 +2,22 @@ const { Model, DataTypes } = require('sequelize');
 
 const sequelize = require('../config/connection.js');
 
-class Tag extends Model {} // Initialize Tag model (table) by extending off Sequelize's Model class
+class Tag extends Model {}
 
-Tag.init( // Set up fields and rules for Tag model
+Tag.init(
   {
-    // Define columns
+    // define columns
+
     id: {
-      type: DataTypes.INTEGER, // Integer
-      allowNull: false, // Doesn't allow null values
-      primaryKey: true, // Set as primary key
-      autoIncrement: true, // Uses auto increment
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true
     },
-    tag_name: { // Define tag_name column
-      type: DataTypes.STRING, // String 
+    tag_name: {
+      type: DataTypes.STRING,
     }
+    // define columns
   },
   {
     sequelize,

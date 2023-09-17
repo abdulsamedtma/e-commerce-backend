@@ -1,33 +1,32 @@
-const { Tag } = require('../models'); // Imports the Tag model
+const { Tag } = require('../models');
 
-// Creates an array of objects that will be used to seed the Tag model
 const tagData = [
   {
-    tag_name: 'rock music', // Tag name
+    tag_name: 'rock music',
   },
   {
-    tag_name: 'pop music', // Tag name
+    tag_name: 'pop music',
   },
   {
-    tag_name: 'blue', // Tag name
+    tag_name: 'blue',
   },
   {
-    tag_name: 'red', // Tag name
+    tag_name: 'red',
   },
   {
-    tag_name: 'green', // Tag name
+    tag_name: 'green',
   },
   {
-    tag_name: 'white', // Tag name
+    tag_name: 'white',
   },
   {
-    tag_name: 'gold', // Tag name
+    tag_name: 'gold',
   },
   {
-    tag_name: 'pop culture', // Tag name
+    tag_name: 'pop culture',
   },
 ];
 
-const seedTags = () => Tag.bulkCreate(tagData); // Uses the bulkCreate method to seed the Tag table
+const seedTags = () => Tag.bulkCreate(tagData);
 
-module.exports = seedTags; // Exports the seedTags function
+module.exports = seedTags;
