@@ -97,3 +97,6 @@ Have additional questions? Click the links below to reach me through my GitHub a
 If you'd like to contribute to this project, feel free to fork the repository and submit a pull request. Your contributions are greatly appreciated.
 
 Click: [Repository URL](https://github.com/abdulsamedtma/e-commerce-backend)
+
+
+                  This E-Commerce Backend App was created with ❤️ by Abdul. ✨  Every day is a learning day!  ✨
