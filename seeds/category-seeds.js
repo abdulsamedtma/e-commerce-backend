@@ -1,9 +1,8 @@
-const { Category } = require('../models'); // Imports the Category model
+const { Category } = require('../models');
 
-// Creates an array of objects that will be used to seed the Category model
 const categoryData = [
   {
-    category_name: 'Shirts', 
+    category_name: 'Shirts',
   },
   {
     category_name: 'Shorts',
@@ -19,6 +18,6 @@ const categoryData = [
   },
 ];
 
-const seedCategories = () => Category.bulkCreate(categoryData);  // Uses the bulkCreate method to seed the Category table
+const seedCategories = () => Category.bulkCreate(categoryData);
 
-module.exports = seedCategories; // Exports the seedCategories function
+module.exports = seedCategories;
