@@ -64,6 +64,8 @@ To get started with this project, follow these simple steps:
 
 Use tools like Insomnia to thoroughly test the API endpoints for categories, products, and tags. Perform CRUD operations to efficiently manage your e-commerce data.
 
+![Alt text](assets/GET-categories.png)
+
 ## Technologies
 Project is created with 
 * [Javascript](https://www.javascript.com/)
@@ -83,7 +85,7 @@ Special thanks to my tutor for taking the time to help me fix errors and providi
 
 ## Walkthrough Video
 
-To see this application in action, please check out our [Walkthrough Video](#) that demonstrates the functionality and showcases how it meets all the acceptance criteria.
+To see this application in action, please check out our [Walkthrough Video](https://drive.google.com/file/d/1Xo-NkKaBbw1bZyb6DgWbz1ETN8Xj4l7p/view) that demonstrates the functionality and showcases how it meets all the acceptance criteria.
 
 ## Questions
 
